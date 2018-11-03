@@ -80,6 +80,8 @@ nav h1 a {
     display: flex;
     height: auto;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* Display list items side by side */
@@ -238,7 +240,6 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: fixed;
   width: 100%;
 }
 #restaurant-name {
@@ -274,6 +275,8 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 2%;
   display: flex;
   flex-flow: column wrap;
@@ -308,10 +311,13 @@ nav h1 a {
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 100%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
+}
+#reviews-list :last-child {
+  margin-bottom: 0;
 }
 #restaurant-hours td {
   color: #666;
