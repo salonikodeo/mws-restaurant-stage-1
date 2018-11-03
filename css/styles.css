@@ -141,7 +141,7 @@ nav h1 a {
   letter-spacing: 0;
   margin: 10px;
   padding: 0 10px;
-  width: auto;
+  width: 100%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -169,8 +169,8 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
   flex-shrink: 1;
-  width: 80%;
-  max-width: 85%;
+  width: 100%;
+  max-width: 100%;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -309,7 +309,6 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
   position: relative;
   width: 100%;
 }
@@ -321,4 +320,25 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* Add media queries to display on larger devices */
+@media screen and (min-width: 550px) {
+  .filter-options {
+    flex-flow: row;
+    flex-grow: 1;
+  }
+  .filter-option h2 {
+    flex-grow: 2;
+  }
+  #restaurants-list {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  #restaurants-list li {
+    flex-flow: row wrap;
+    width: 33%;
+    padding: 3%;
+    align-items: center;
+  }
 }
