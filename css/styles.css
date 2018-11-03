@@ -72,7 +72,9 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
+    display: flex;
+    height: auto;
 }
 
 /* Display list items side by side */
@@ -150,6 +152,7 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
+  border-radius: 25px;
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
@@ -164,6 +167,7 @@ nav h1 a {
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
+  border-radius: 10px;
   margin-top: 3%;
   max-width: 100%;
   min-height: auto;
@@ -188,6 +192,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
+  border-radius: 10px;
   color: #fff;
   display: inline-block;
   font-size: 1em;
@@ -199,29 +204,33 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.inside {
+  display: flex;
+  flex-flow: column wrap;
+}
 .inside header {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
+  height: auto;
   width: 100%;
-  z-index: 1000;
+  /*z-index: 1000;*/
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  height: 50%;
+  position: absolute;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
+  margin: auto;
 }
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -234,7 +243,7 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 50%;
+	width: 90%;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -255,11 +264,12 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  /*padding: 140px 40px 30px;*/
+  width: 100%;
+  text-align: center;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  /*padding: 30px 40px 80px;*/
 }
 #reviews-container h2 {
   color: #f58500;
@@ -271,10 +281,12 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow: column wrap;
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
