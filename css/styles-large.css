@@ -1,0 +1,32 @@
+/* Add responsiveness for larger screens */ 
+  
+#restaurant-list li {
+  width: 25%;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 3%;
+}
+#restaurant-img {
+  width:50%;
+  float: left;
+  flex-direction: row;
+  order: 1;
+}
+#restaurant-hours {
+  width: 50%;
+  order: 2;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  right: 0;
+  position:absolute;
+  padding-top: 5%;
+  overflow: auto;
+  font-size: 1.5em;
+  flex-wrap: nowrap;
+}
+#restaurant-address {
+  order: 1;
+  font-weight: bold;
+  font-size: 2em;
+}
