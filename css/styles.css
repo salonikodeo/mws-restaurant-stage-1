@@ -264,7 +264,10 @@ option :hover {
 }
 #restaurant-address {
   font-size: 12pt;
-  margin: 4% 0% 3%;
+  margin: 4% 2% 3% 2%;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  align-self: center;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -288,8 +291,9 @@ option :hover {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
+  margin: 1% 2% 1% 2%;
 }
 #reviews-container {
   padding: 1% 2% 1% 2%;
@@ -356,5 +360,27 @@ option :hover {
     align-items: center;
     flex-flow: row wrap;
     padding: 3%;
+  }
+  #restaurant-img {
+  width:50%;
+  float: left;
+  flex-direction: row;
+  order: 1;
+  }
+  #restaurant-hours {
+  width: 50%;
+  order: 2;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  right: 0;
+  position:absolute;
+  padding-top: 5%;
+  font-size: 1.5em;
+  }
+  #restaurant-address {
+    order: 1;
+    font-weight: bold;
+    font-size: 2em;
   }
 } 
