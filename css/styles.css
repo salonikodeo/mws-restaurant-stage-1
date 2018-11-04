@@ -22,7 +22,8 @@ a {
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #87C7B4;
+  outline-color: green;
+	color: #D82E56;
 	text-decoration: none;
 }
 a img{
@@ -106,6 +107,7 @@ nav h1 a {
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
     color: #142145;
+    outlin-color: green;
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
@@ -144,6 +146,9 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 100%;
+}
+option :hover {
+  outline-color: red;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -339,8 +344,17 @@ nav h1 a {
   }
   #restaurants-list li {
     flex-flow: row wrap;
-    width: 33%;
+    max-width: 45%;
     padding: 3%;
     align-items: center;
   }
 }
+ 
+@media screen and (min-width: 800px) {
+  #restaurant-list li {
+    width: 25%;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 3%;
+  }
+} 
