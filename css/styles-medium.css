@@ -1,0 +1,19 @@
+/* Add media queries to display on medium screens */
+
+.filter-options {
+  flex-flow: row;
+  flex-grow: 1;
+}
+.filter-option h2 {
+  flex-grow: 2;
+}
+#restaurants-list {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#restaurants-list li {
+  flex-flow: row wrap;
+  max-width: 45%;
+  padding: 3%;
+  align-items: center;
+}
