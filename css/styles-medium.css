@@ -10,10 +10,20 @@
 #restaurants-list {
   flex-flow: row wrap;
   justify-content: space-around;
+  display: flex;
 }
 #restaurants-list li {
-  flex-flow: row wrap;
-  max-width: 45%;
+  width: 45%;
+  flex-shrink: 1;
   padding: 3%;
+  justify-content: center;
   align-items: center;
+}
+#restaurant-container {
+  justify-content: center;
+  align-items: center;
+}
+#restaurant-img {
+  max-width:100%;
+  justify-content: center;
 }

@@ -50,7 +50,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 2%;
   text-align: center;
   text-transform: uppercase;
-  max-width: 100%;
+  max-width: 96%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -176,7 +176,7 @@ option :hover {
   padding: 0 30px 25px;
   text-align: left;
   flex-shrink: 1;
-  width: 100%;
+  /*width: 100%;*/
   max-width: 100%;
 }
 #restaurants-list .restaurant-img {
@@ -232,7 +232,6 @@ option :hover {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 50vh;
   padding: 0;
   margin: auto;
   width: 100%;
@@ -240,7 +239,6 @@ option :hover {
 }
 .inside #map {
   background-color: #ccc;
-  height: 100%;
   width: 100%;
   margin: auto;
   justify-content: space-evenly;

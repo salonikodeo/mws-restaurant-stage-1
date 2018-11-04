@@ -9,6 +9,7 @@
 #restaurant-img {
   width:50%;
   float: left;
+  align-self: baseline;
   flex-direction: row;
   order: 1;
 }
@@ -23,7 +24,6 @@
   padding-top: 5%;
   overflow: auto;
   font-size: 1.5em;
-  flex-wrap: nowrap;
 }
 #restaurant-address {
   order: 1;
