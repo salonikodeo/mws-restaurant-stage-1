@@ -354,7 +354,7 @@ option :hover {
   }
 }
  
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   #restaurant-list li {
     width: 25%;
     align-items: center;
@@ -376,7 +376,9 @@ option :hover {
   right: 0;
   position:absolute;
   padding-top: 5%;
+  overflow: auto;
   font-size: 1.5em;
+  flex-wrap: nowrap;
   }
   #restaurant-address {
     order: 1;
