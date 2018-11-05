@@ -1,5 +1,22 @@
 /* Add media queries to display on medium screens */
 
+*,
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+box-sizing: inherit;
+}
+
+html {
+font-size: 62.5%;
+}
+
+body {
+line-height: 1.7rem;
+box-sizing: border-box;
+}
+
 .filter-options {
   flex-flow: row;
   flex-grow: 1;

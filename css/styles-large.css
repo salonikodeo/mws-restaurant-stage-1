@@ -1,13 +1,30 @@
 /* Add responsiveness for larger screens */ 
+
+*,
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+box-sizing: inherit;
+}
+
+html {
+font-size: 62.5%;
+}
+
+body {
+line-height: 1.7rem;
+box-sizing: border-box;
+}
   
-#restaurant-list li {
-  width: 25%;
+#restaurants-list li {
+  width: 30%;
   align-items: center;
   flex-flow: row wrap;
   padding: 3%;
 }
 #restaurant-img {
-  width:50%;
+  width:40%;
   float: left;
   align-self: baseline;
   flex-direction: row;

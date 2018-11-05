@@ -147,8 +147,9 @@ nav h1 a {
   padding: 0 10px;
   width: 100%;
 }
-option :hover {
+.filter-options :hover :focus {
   outline-color: red;
+  background-color: red;
 }
 
 /* ====================== Restaurant Listing ====================== */
