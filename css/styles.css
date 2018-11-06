@@ -107,7 +107,7 @@ nav h1 a {
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
     color: #142145;
-    outlin-color: green;
+    outline-color: green;
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
