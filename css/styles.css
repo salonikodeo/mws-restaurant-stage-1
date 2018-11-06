@@ -10,6 +10,7 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
+  box-sizing: border-box;
 	position:relative;
 }
 ul, li {
