@@ -8,7 +8,7 @@
   "icons": [
   	{
   	  "src" : "/img/baseline-restaurant-24px.svg",
-  	  "type": "image/svg",
+  	  "type": "image/svg"
   	}
   ]
 }
