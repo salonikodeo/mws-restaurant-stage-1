@@ -50,7 +50,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 2%;
   text-align: center;
   text-transform: uppercase;
-  max-width: 96%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -76,7 +75,7 @@ nav h1 a {
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 1rem;
     margin: 0;
     width: 100%;
     display: flex;
@@ -251,7 +250,7 @@ nav h1 a {
 #restaurant-name {
   color: #642DA7;
   font-family: Arial,sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 200;
   letter-spacing: 1px;
   margin: 2% 0 3%;
@@ -299,8 +298,7 @@ nav h1 a {
 }
 #reviews-container h2 {
   color: #1A843F;
-  font-size: 24pt;
-  font-weight: 300;
+  font-size: large;
   letter-spacing: -1px;
   padding-bottom: 1pt;
 }
